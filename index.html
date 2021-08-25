@@ -277,6 +277,13 @@
                     }
                 }
             }
+            const body = document.getElementById('main');
+            body.addEventListener('click',function(even){
+                header.style.height=null;
+            })
+            header.addEventListener('click',function(event){
+                event.stopPropagation();
+            })
         </script>
         <script>
             const   buyBtns = document.querySelectorAll('.js-buy-btn')
