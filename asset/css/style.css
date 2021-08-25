@@ -7,10 +7,13 @@
     color:#fff !important;
 }
 html{
-    font-family: Arial, Helvetica, sans-serif
+    scroll-behavior: smooth !important;
+    font-family: Arial, Helvetica, sans-serif;
+   
 }
 #main{
     overflow: hidden;
+   
 }
 
 #header{
@@ -21,7 +24,6 @@ html{
    left: 0;
    right: 0;
    z-index: 1;
-   overflow: hidden;
 } 
 #nav{
     
@@ -369,7 +371,11 @@ html{
     float:left;
     width: 50%;
     font-size: 15px;
+    overflow: hidden;
     
+}
+.contact-1line{
+    margin-bottom: 8px;
 }
 .contact-input{
     padding: 8px 0;
@@ -381,7 +387,14 @@ html{
     padding-left: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
-    border: 1px #ccc solid;   
+    border: 1px #ccc solid;  
+    width: 100%; 
+}
+.input-1{
+    padding-right: 4px;
+}
+.input-2{
+    padding-left: 4px;
 }
 .contact-par{
     font-size: 18px;

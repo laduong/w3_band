@@ -159,21 +159,30 @@
 
                         </div>
                         <div class="contact-form">
-                            <form action="">
-                                <div class="contact-input">
-                                    <input type="text" placeholder="Name" required>
-                                </div>
-                                <div class="contact-input">
-                                    <input type="text" placeholder="Email" required>
-                                </div>
-                                <div class="contact-input-mess" >
-                                    <input type="text" class="contact-mess" placeholder="Messenge" required>
-                                </div>
-                                <div class="send-btn">
-                                    <input type="submit" value="SEND">
-                                </div>
-                            </form>
+                           
+                                <form action="">
+                                    <div class="contact-1line">
+                                    <div class="contact-input input-1">
+                                        
+                                        <input type="text" placeholder="Name" required>
+                                    </div>
+                                    <div class="contact-input input-2">
+                                        <input type="text" placeholder="Email" required>
+                                     </div> 
+                                    </div>
+                                     <div class="contact-input-mess" >
+                                        <input type="text" class="contact-mess" placeholder="Messenge" required>
+                                    </div>
+                                    <div class="send-btn">
+                                        <input type="submit" value="SEND">
+                                    </div>
+                                    
+                                </form>      
+                            
                         </div>
+                                   
+                               
+                        
                     </div>
                 </div>
                 <div class="map">
@@ -250,11 +259,17 @@
                 }
             }
             var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
-            console.log(menuItems)
             for(var i=0;i<menuItems.length;i++){
                 var menuItem = menuItems[i];
-                menuItem.onclick = function(){
-                    header.style.height=null;
+                menuItem.onclick = function(event){
+                    var isParentMenu = this.nextElementSibling && this.nextElementSibling.classList.contains('subnav');
+                    if(isParentMenu){
+                        event.preventDefault();
+                    }
+                    else{
+                        header.style.height=null;
+                        
+                    }
                 }
             }
         </script>
