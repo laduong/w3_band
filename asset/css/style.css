@@ -81,6 +81,9 @@ html{
 }
 #header .menu-btn{
     display: none;
+    position: absolute;
+    top:0;
+    right: 0;
 }
 #header .search-btn{
     float:right;

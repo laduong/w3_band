@@ -15,7 +15,7 @@
            <!-- header -->
             <div id="header">
                 <ul id="nav">
-                    <li><a href="">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#band">Band</a></li>
                     <li><a href="#tour">Tour</a></li>
                     <li><a href="#contact">Contact</a></li>
@@ -24,9 +24,9 @@
                         <i class="nav-down ti-angle-down"></i>  
                         </a>
                         <ul class="subnav" style="color: black">
-                            <li><a href="">Merchandise</a></li>
-                            <li><a href="">Extra</a></li>
-                            <li><a href="">Media</a></li>
+                            <li><a href="#">Merchandise</a></li>
+                            <li><a href="#">Extra</a></li>
+                            <li><a href="#">Media</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -243,10 +243,18 @@
             mobileMenu.onclick = function(){
                 var isClose = header.clientHeight === headerHeight;
                 if(isClose){
-                    header.style.height =  'auto';
+                    header.style.height = 'auto';
                 }
                 else{
                     header.style.height = '46px';
+                }
+            }
+            var menuItems = document.querySelectorAll('#nav li a[href*="#"]');
+            console.log(menuItems)
+            for(var i=0;i<menuItems.length;i++){
+                var menuItem = menuItems[i];
+                menuItem.onclick = function(){
+                    header.style.height=null;
                 }
             }
         </script>

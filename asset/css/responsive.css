@@ -1,6 +1,10 @@
 @media(max-width:740px){
-    #nav > li {
-        display: block;
+#nav{
+    display: block;
+    }
+
+#nav > li {
+    display: block;
 }
 #header .search-btn{
     display: none;
@@ -8,7 +12,8 @@
 #header .menu-btn{
     float:right;
     padding:0 21px;
-    display:block
+    display:block;
+    position: absolute;
 }
 #header .menu-icon{
     color: #fff;
