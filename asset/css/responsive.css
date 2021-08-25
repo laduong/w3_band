@@ -1,83 +1,83 @@
 @media(max-width:740px){
-#header{
-overflow: hidden;
-}
-#header .search-btn{
-    display: none;
-}
-#header .menu-btn{
-    float:right;
-    padding:0 21px;
-    display:block;
-       
-}
-#header .menu-icon{
-    color: #fff;
-    font-size: 20px;
-    line-height: 46px;
-}
-#nav{
-    display: block;
-}
-#nav > li:first-child{
-    display: inline-block;
-}
-#nav li a{
-    padding : 1px 24px;
-}
-#nav .subnav {
-    display:none;
-    position: inherit;
-    background-color: #000;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-    min-width: 160px;
+    #header{
+    overflow: hidden;
+    }
+    #header .search-btn{
+        display: none;
+    }
+    #header .menu-btn{
+        float:right;
+        padding:0 21px;
+        display:block;
+           
+    }
+    #header .menu-icon{
+        color: #fff;
+        font-size: 20px;
+        line-height: 46px;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav li a{
+        padding : 1px 24px;
+    }
+    #nav .subnav {
+        display:none;
+        position: inherit;
+        background-color: #000;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        min-width: 160px;
+        
+    }
+    #nav .subnav a{
+        color: #fff;
+        padding: 5px 45px;
+        line-height: 38px;
+    }
     
-}
-#nav .subnav a{
-    color: #fff;
-    padding: 5px 45px;
-    line-height: 38px;
-}
-
-#nav > li {
-    display: block;
-}
-#content .team{
-    float:left;
-    width:100%;
-}
-#content .band-img{
-    width: 60%;
-    margin-top: 15px;
-    border-radius: 4px;
-    margin-bottom: 16px;
-}
-#content .Name{
-    font-size: 15px;
-    margin: 0px 15px;
-}
-.place-list .place-item{
-    float:left;
-    width: 100%;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-bottom: 16px;
-}
-.contact-text{
-    width:100%;
-    float: left;
-    padding-left: 12px;
-    padding-top: 8px;
-    font-size: 18px;
-}
-.contact-form{
-    float:left;
-    width:100%;
-    font-size: 15px;
-    
-}
-.contact-input-mess{
-    float: left;
-    width: 100%;
-}
-}
+    #nav > li {
+        display: block;
+    }
+    #content .team{
+        float:left;
+        width:100%;
+    }
+    #content .band-img{
+        width: 60%;
+        margin-top: 15px;
+        border-radius: 4px;
+        margin-bottom: 16px;
+    }
+    #content .Name{
+        font-size: 15px;
+        margin: 0px 15px;
+    }
+    .place-list .place-item{
+        float:left;
+        width: 100%;
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+    .contact-text{
+        width:100%;
+        float: left;
+        padding-left: 12px;
+        padding-top: 8px;
+        font-size: 18px;
+    }
+    .contact-form{
+        float:left;
+        width:100%;
+        font-size: 15px;
+        
+    }
+    .contact-input-mess{
+        float: left;
+        width: 100%;
+    }
+    }
