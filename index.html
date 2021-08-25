@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="asset/css/style.css">
         <link rel="stylesheet" href="asset/icon-font/themify-icons/themify-icons.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./asset/css/responsive.css">
     </head>
     <body>
         <div id="main">
@@ -32,6 +33,9 @@
                 <div class="search-btn">
                     <i class="search-icon ti-search"></i>
                     
+                </div>
+                <div id="menu-btn" class="menu-btn">
+                    <i class=" menu-icon ti-menu"></i>
                 </div>
 
             </div>
@@ -233,8 +237,18 @@
             
         </div>
         <script>
-
-
+            var header = document.getElementById('header');
+            var mobileMenu = document.getElementById('menu-btn');
+            var headerHeight = header.clientHeight;
+            mobileMenu.onclick = function(){
+                var isClose = header.clientHeight === headerHeight;
+                if(isClose){
+                    header.style.height =  'auto';
+                }
+                else{
+                    header.style.height = '46px';
+                }
+            }
         </script>
         <script>
             const   buyBtns = document.querySelectorAll('.js-buy-btn')

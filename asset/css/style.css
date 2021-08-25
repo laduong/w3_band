@@ -21,7 +21,7 @@ html{
    left: 0;
    right: 0;
    z-index: 1;
-   
+   overflow: hidden;
 } 
 #nav{
     
@@ -78,6 +78,9 @@ html{
     background-color: #ccc;
     display:block;
     
+}
+#header .menu-btn{
+    display: none;
 }
 #header .search-btn{
     float:right;
